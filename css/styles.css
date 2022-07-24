@@ -66,6 +66,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  align-items: center;
 }
 .section {
   padding-top: 94px;
@@ -156,7 +157,14 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  max-width: 1600px;
+  height: 600xp;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/Img\ \(hero\).jpg');
 }
+
 .main-title {
   width: 696px;
   margin: 0 auto;
@@ -190,7 +198,6 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  margin-left: ;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -198,6 +205,14 @@ body {
 }
 /* ========== /HERO========================== */
 /*============== ABOUT=============== */
+.aicons {
+  background-color: #f5f4fa;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+}
 .about-text {
   font-weight: 700;
   font-size: 14px;
@@ -223,13 +238,11 @@ body {
 .about-list .about-item + .about-item {
   margin-left: 30px;
 }
-.about-item::before {
+.icon {
   display: block;
-  content: '';
-  height: 120px;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
+  justify-content: center;
 }
+
 .img {
   display: block;
   max-width: 100%;
@@ -248,10 +261,6 @@ body {
 .gallery {
   padding-top: 0px;
   padding-bottom: 94px;
-}
-.pictures {
-}
-.work .pictures + .pictures {
 }
 
 .work {
@@ -288,6 +297,26 @@ body {
   justify-content: space-between;
   gap: 30px;
 }
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+.social-list-link:hover .socail-list-icon .social-list-link:focus .socail-list-icon {
+  fill: var(--fon-color);
+}
 .sabtitle-profession {
   font-size: 16px;
   line-height: 1.18;
@@ -295,8 +324,57 @@ body {
   text-align: center;
   margin-top: 10px;
   color: var(--secondary-text-color);
+  margin-bottom: 16px;
 }
 /* ===================== /TEAM======================== */
+/* ================CLIENT=================== */
+.section-client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-title-client {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.list-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.client:hover,
+.client:focus {
+  color: var(--accent-color);
+}
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+}
+.client-icons {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-client {
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+/* ================ /CLIENT=================== */
 /* =================FOOTER================= */
 .footer {
   padding-top: 60px;
@@ -349,6 +427,24 @@ body {
 .logo-footer {
   color: var(--fon-color);
   margin-bottom: 20px;
+}
+.media {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  font-style: normal;
+  color: var(--fon-color);
+}
+.social-list-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.media-footer {
+  display: flex;
 }
 /* ========================PORTFOLIO========================= */
 .btn-portfolio {
